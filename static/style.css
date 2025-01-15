@@ -1,0 +1,75 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+#dashboard {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#dashboard div {
+  font-size: 14px;
+}
+
+#dashboard label {
+  font-weight: bold;
+}
+
+#dashboard button {
+  background-color: white;
+  border: 1px solid #4CAF50;
+  color: #4CAF50;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#dashboard button:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.status {
+  font-weight: bold;
+}
+
+.status.connected {
+  color: #2ecc71; /* Green */
+}
+
+.status.disconnected {
+  color: #e74c3c; /* Red */
+}
+
+#map {
+  height: calc(100vh - 60px); /* Ajuster pour tenir compte du header */
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 12px;
+}
